@@ -1,12 +1,13 @@
+
 function sum (args) { 
-   let summ = 0.0;
+   let res = 0.0;
    for (let i of args) {
-     summ += i;
+     res += i;
    }
-   return summ;
+   return res;
 }
 
-x = [.1, .1, .1, .1, .1, .1, .1, .1, .1, .1]
+xs = [.1, .1, .1, .1, .1, .1, .1, .1, .1, .1]
 
-console.log(sum(x))
+console.log("sum: %d", sum(xs))
 
