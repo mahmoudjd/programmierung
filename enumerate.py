@@ -1,6 +1,15 @@
 
-def fun(my_input):
-    return [x for x, y in enumerate(my_input) if y%2 != 0]
+def odd_numbers(my_input):
+    for x,y in enumerate(my_input):
+        print(f"(index: {x}, value: {y})")
+    return [y for x, y in enumerate(my_input) if x%2 != 0]
 
-xs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(fun(xs))
+
+def palindrome(s):
+    return s == s[::-1]    
+
+
+print(palindrome("otto"))
+
+xs = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+print(odd_numbers(xs))
