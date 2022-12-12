@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+void print(char* s) { 
+  printf("%s", s);
+}
 int main () { 
  /*
   for(int row = 0; row < 6; row++) { 
@@ -16,11 +18,11 @@ int main () {
   for(int row= 0 ; row < 5; row++) { 
     for (int col= 0; col < 5; col++) { 
       if(col == 0 || row == 0 || row == 4 || col == 4) { 
-        printf(" *");
+        print(" *");
       } else { 
-        printf("  ");
+        print("  ");
       }
     }
-    printf("\n");
+    print("\n");
   }
 }
