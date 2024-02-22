@@ -6,7 +6,7 @@ def odd_numbers(my_input):
 
 
 def palindrome(s):
-    return s == s[::-1]    
+    return s == s[::-1]
 
 
 print(palindrome("otto"))
